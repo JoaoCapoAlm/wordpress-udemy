@@ -21,13 +21,12 @@
 			<div class="container">
                 <div class="row">
                     <section class="logo col-md-2 col-12 text-center">Logo</section>
-                    <div class="col-md-10 text-end">
-                        <?php wp_nav_menu([
-                            'theme_location' => 'menu_principal',
-                            'container' => 'nav',
-                            'menu_class' => 'menu'
-                        ]); ?>
-                    </div>
+                    <?php wp_nav_menu([
+                        'theme_location' => 'menu_principal',
+                        'container' => 'nav',
+                        'container_class' => 'col-md-10 text-end',
+                        'menu_class' => 'menu'
+                    ]); ?>
                 </div>
             </div>
 		</section>

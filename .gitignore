@@ -70,3 +70,4 @@ Thumbs.db
 
 # track these themes
 !wp-content/themes/wpcurso/
+!wp-config-exemplate.php
