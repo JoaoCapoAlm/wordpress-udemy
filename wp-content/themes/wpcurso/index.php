@@ -23,7 +23,10 @@
                                     the_post();
                             ?>
                                     <article>
-                                        <?php the_title('<h2>', '</h2>'); ?>
+                                        <?php
+                                        the_title('<h2>', '</h2>');
+                                        the_post_thumbnail();
+                                        ?>
                                         <p>Publicado em <?= get_the_date(); ?> por <?php the_author_posts_link()?></p>
                                         <p>Categorias: <?php the_category(' '); ?></p>
                                         <?php

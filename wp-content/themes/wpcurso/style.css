@@ -23,3 +23,12 @@ Tags: two-columns, left-sidebar, custom-header, custom-menu, custom-logo, blog
 .menu li {
     display: inline;
 }
+
+.wp-post-image {
+    float: left;
+    margin: 0 15px 10px 0;
+}
+
+.blog article {
+    display: inline-block;
+}
