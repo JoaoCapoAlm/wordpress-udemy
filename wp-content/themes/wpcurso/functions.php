@@ -40,6 +40,7 @@ add_filter('style_loader_src', 'remove_versao_scripts_styles', 9999);
 add_filter('script_loader_src', 'remove_versao_scripts_styles', 9999);
 // endregion
 
+// Cria os tipos de menu diferentes
 register_nav_menus([
     'menu_principal' => 'Menu principal',
     'menu_rodape' => 'Menu do rodapé'
