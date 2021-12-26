@@ -17,18 +17,19 @@
                 <div class="search col-xl-3 col-sm-5 col-6 text-end">Pesquisa</div>
             </div>
         </div>
-		<section class="menu-area">
-			<div class="container">
-                <div class="row">
-                    <section class="logo col-md-2 col-12 text-center">Logo</section>
-                    <?php wp_nav_menu([
-                        'theme_location' => 'menu_principal',
-                        'container' => 'nav',
-                        'container_class' => 'col-md-10 text-end',
-                        'menu_class' => 'menu'
-                    ]); ?>
-                </div>
+    </section>
+    <section class="menu-area">
+        <div class="container">
+            <div class="row">
+                <section class="logo col-md-2 col-12 text-center">Logo</section>
+                <?php wp_nav_menu([
+                    'theme_location' => 'menu_principal',
+                    'container' => 'nav',
+                    'container_class' => 'col-md-10 text-end',
+                    'menu_class' => 'menu',
+                    'menu_id' => 'menu-principal'
+                ]); ?>
             </div>
-		</section>
+        </div>
 	</section>
 </header>

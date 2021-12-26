@@ -47,9 +47,32 @@ function config_tema(){
         'menu_rodape' => 'Menu do rodapé'
     ]);
 
-    $args = ['height' => 225, 'width' => 1920];
-    add_theme_support('custom-header', $args);
+    add_theme_support('custom-header', ['height' => 225, 'width' => 1920]);
     add_theme_support('post-thumbnails', ['post']);
     add_theme_support('post-formats', ['video', 'image']);
 }
-add_action('after_setup_theme', 'config_tema');
+add_action('after_setup_theme', 'config_tema', 0);
+
+function sidebar_tema(){
+    register_sidebar([
+        'name' => 'Home Page Sidebar',
+        'id' => 'sidebar-1',
+        'description' => 'Sidebar usado na página inicial (home)',
+        'before_widget' => '<div class="widget-wrapper">',
+        'after_widget' => '</div>',
+        'before_sidebar' => '<aside class="sidebar col-md-4">',
+        'after_sidebar' => '</aside>'
+    ]);
+
+    register_sidebar([
+        'name' => 'Blog Sidebar',
+        'id' => 'sidebar-2',
+        'description' => 'Sidebar usado na página do blog',
+        'before_widget' => '<div class="widget-wrapper">',
+        'after_widget' => '</div>',
+        'before_sidebar' => '<aside class="sidebar col-md-4">',
+        'after_sidebar' => '</aside>'
+    ]);
+}
+add_action('widgets_init', 'sidebar_tema');
+

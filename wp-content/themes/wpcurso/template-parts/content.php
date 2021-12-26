@@ -1,4 +1,4 @@
-<article>
+<article <?php post_class() ?>>
     <?php
     the_title('<h2>', '</h2>');
     the_post_thumbnail();

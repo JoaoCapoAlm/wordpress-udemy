@@ -14,7 +14,7 @@
         <section class="middle-area">
             <div class="container">
                 <div class="row">
-                    <aside class="sidebar col-md-4">Barra lateral</aside>
+                    <?php get_sidebar('home') ?>
                     <div class="news col-md-8">
                         <?php if(have_posts()):
                             while (have_posts()):

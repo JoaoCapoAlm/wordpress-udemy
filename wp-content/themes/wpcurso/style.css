@@ -10,18 +10,41 @@ Description: Tema criado durante curso de WordPress
 Tags: two-columns, left-sidebar, custom-header, custom-menu, custom-logo, blog
 */
 
+.top-bar{
+    background-color: #bd2217;
+    padding: 1em 0;
+    color: white;
+    font-weight: bold;
+}
+
+.menu-area {
+    padding: 1em 0;
+    background-color: lightgray;
+}
+
 .social-media-icons {
-    background-color: green;
     height: 30px;
 }
 
 .search {
-    background-color: yellow;
     height: 30px;
+}
+
+#menu-principal {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.25em;
 }
 
 .menu li {
     display: inline;
+}
+
+.menu a {
+    margin: 0 0.5em;
+    text-decoration: none;
+    color: #352225;
 }
 
 .wp-post-image {
@@ -31,4 +54,13 @@ Tags: two-columns, left-sidebar, custom-header, custom-menu, custom-logo, blog
 
 .blog article {
     display: inline-block;
+}
+
+.sidebar {
+    padding: 1em;
+    background-color: #f8dc87;
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
 }
