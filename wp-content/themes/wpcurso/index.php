@@ -21,20 +21,8 @@
                             <?php if(have_posts()):
                                 while (have_posts()):
                                     the_post();
-                            ?>
-                                    <article>
-                                        <?php
-                                        the_title('<h2>', '</h2>');
-                                        the_post_thumbnail();
-                                        ?>
-                                        <p>Publicado em <?= get_the_date(); ?> por <?php the_author_posts_link()?></p>
-                                        <p>Categorias: <?php the_category(' '); ?></p>
-                                        <?php
-                                        the_tags('<p>Tags: ', ', ', '</p>');
-                                        the_content();
-                                        ?>
-                                    </article>
-                            <?php endwhile;
+                                    get_template_part('template-parts/content', get_post_format());
+                                endwhile;
                             else: ?>
                                 <p>Não existe post publicado</p>
                             <?php endif; ?>
