@@ -54,6 +54,7 @@ function config_tema(){
 add_action('after_setup_theme', 'config_tema', 0);
 
 function sidebar_tema(){
+    //Home
     register_sidebar([
         'name' => 'Home Page Sidebar',
         'id' => 'sidebar-1',
@@ -63,7 +64,7 @@ function sidebar_tema(){
         'before_sidebar' => '<aside class="sidebar col-md-4">',
         'after_sidebar' => '</aside>'
     ]);
-
+    // Blog
     register_sidebar([
         'name' => 'Blog Sidebar',
         'id' => 'sidebar-2',
@@ -73,6 +74,30 @@ function sidebar_tema(){
         'before_sidebar' => '<aside class="sidebar col-md-4">',
         'after_sidebar' => '</aside>'
     ]);
+
+    // Services 1
+    register_sidebar([
+        'name' => 'Services 1',
+        'id' => 'services-1',
+        'description' => 'Área primeiro serviço',
+        'before_widget' => '<div class="widget-wrapper">',
+        'after_widget' => '</div>'
+    ]);
+
+    register_sidebar([
+        'name' => 'Services 2',
+        'id' => 'services-2',
+        'description' => 'Área segundo serviço',
+        'before_widget' => '<div class="widget-wrapper">',
+        'after_widget' => '</div>'
+    ]);
+
+    register_sidebar([
+        'name' => 'Services 3',
+        'id' => 'services-3',
+        'description' => 'Área terceiro serviço',
+        'before_widget' => '<div class="widget-wrapper">',
+        'after_widget' => '</div>'
+    ]);
 }
 add_action('widgets_init', 'sidebar_tema');
-

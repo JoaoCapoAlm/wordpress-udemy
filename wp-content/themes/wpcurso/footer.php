@@ -8,7 +8,7 @@
                 'theme_location' => 'menu_rodape',
                 'container' => 'nav',
                 'container_class' => 'footer-menu col-sm-5 col-8 text-end',
-                'menu_class' => 'menu'
+                'menu_class' => 'footer-menu'
             ]); ?>
         </div>
     </div>

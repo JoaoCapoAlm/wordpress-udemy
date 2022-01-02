@@ -26,7 +26,7 @@
                     'theme_location' => 'menu_principal',
                     'container' => 'nav',
                     'container_class' => 'col-md-10 text-end',
-                    'menu_class' => 'menu',
+                    'menu_class' => 'main-menu',
                     'menu_id' => 'menu-principal'
                 ]); ?>
             </div>
