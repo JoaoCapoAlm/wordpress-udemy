@@ -82,7 +82,7 @@ $table_prefix = 'wpc_';
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', true );
+const WP_DEBUG           = true;
 const DISALLOW_FILE_EDIT = true; // Desativa edicao de arquivos do tema e plugins
 const DISALLOW_FILE_MODS = true; // Desativa o gerenciamento de plugins
 /* Isto é tudo, pode parar de editar! :) */

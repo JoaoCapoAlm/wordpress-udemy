@@ -106,7 +106,7 @@ footer{ background: #000; padding: 15px 0; color: #fcfae1; }
 /************** INNER PAGES *****************/
 
 /* Blog */
-.wp-post-image{ float: left; margin: 0 15px 10px 0; }
+.wp-post-image{ float: left; margin: 0 15px 10px 0; max-width: 100%; height: auto }
 .blog embed, .blog iframe, .blog object, .blog video { margin-bottom: 1.6em; max-width: 100%; vertical-align: middle; } /* Deixa os vídeos responsivos */
 .blog article{ display: inline-block; margin: 0 0 30px; width: 100%; }
 .blog article h2{ margin-bottom: 15px; }
