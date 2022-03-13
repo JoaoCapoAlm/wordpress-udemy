@@ -12,6 +12,14 @@
                                     the_post();
                                     get_template_part('template-parts/content', get_post_format());
                                 endwhile;
+                            ?>
+
+                            <div class="row">
+                                <div class="pages col-6"></div>
+                                <div class="pages text-end col-6"></div>
+                            </div>
+
+                            <?php
                             else: ?>
                                 <p>Não existe post publicado</p>
                             <?php endif; ?>
